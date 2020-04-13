@@ -1,0 +1,16 @@
+.header-container {
+    width: 100%;
+    height: 60px;
+    margin: 0 0 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    font-size: 18px;
+}
+
+.username-container {
+    flex:  1;
+    text-align: left;
+    padding: 0 30px;
+}

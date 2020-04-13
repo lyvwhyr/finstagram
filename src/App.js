@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ProfileHeader } from './components/Header'
+import { ProfileInfo } from './components/ProfileInfo'
+import { ProfileStats } from './components/ProfileStats'
+import { ProfileToolbar } from './components/ProfileToolbar'
+import { StoryToolbar } from './components/StoryToolbar'
+import { ImageGallery } from './components/ImageGallery'
+import { BottomNavigationBar } from './components/BottomNavigationBar'
+import { mockData } from './data'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <ProfileHeader username={mockData.username} />
+      <ProfileInfo
+        username={mockData.username}
+        occupation={mockData.occupation}
+        profilePic={mockData.profilePic}
+        type={mockData.type}
+        url={mockData.url}
+      />
+      <ProfileStats
+        followerCount={mockData.followerCount}
+        postCount={mockData.postCount}
+        followingCount={mockData.followingCount}
+      />
+      <ProfileToolbar />
+      <StoryToolbar stories={mockData.stories} />
+      <ImageGallery posts={mockData.posts} />
+      <BottomNavigationBar />
     </div>
   );
 }

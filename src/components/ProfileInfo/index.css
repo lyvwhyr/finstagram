@@ -1,0 +1,54 @@
+.profile-info-container {
+    width: calc(100% - 64px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 42px 0;
+    margin: 0 32px;
+    font-size: 18px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.profile-info-container .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+}
+.profile-info-container .profile-pic img {
+    width: 90px;
+    height: 90px;
+    border-radius: 99px;
+    object-fit: cover;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+
+.profile-info-container .bio {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 12px;
+}
+
+.profile-info-container .bio > *{
+    margin: 2px 0;
+}
+
+.profile-info-container .bio .type {
+    font-size: 16px;
+    color: #9c9c9c;
+}
+
+.profile-info-container .bio .occupation {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile-info-container .bio .url {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 153, 255);
+}

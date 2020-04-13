@@ -1,0 +1,23 @@
+.profile-stats-container {
+    width: calc(100% - 64px);
+    margin: 29px 26px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-stats-container .stat-count {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-stats-container .stat-count .title{
+    color: #b3b3b3;
+    margin-top: 8px;
+    font-size: 13px;
+    display: flex;
+    font-weight: 700;
+}

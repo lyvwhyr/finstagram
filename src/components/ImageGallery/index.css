@@ -1,0 +1,15 @@
+.image-gallery-container {
+    width: 100%;
+    padding: 20px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-gallery-container img.post {
+    height: 122px;
+    width: 122px;
+    margin: 4px;
+    border-radius: 12px;
+}

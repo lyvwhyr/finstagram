@@ -1,0 +1,35 @@
+.story-toolbar-container {
+    width: 100%;
+    overflow-x: auto;
+    height: 100px;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+.story-toolbar-container::-webkit-scrollbar {
+    display: none;
+}
+.story-toolbar-container .scroll-container {
+    width: auto;
+    display: flex;
+
+}
+
+.story-toolbar-container .preview-image {
+    overflow: hidden;
+    margin: 0 30px 0 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background: rgb(121,171,255);
+    background: linear-gradient(138deg, rgba(121,171,255,1) 0%, rgba(223,177,255,1) 100%);
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.story-toolbar-container .preview-image.unseen {
+    border: 2px solid red;
+}
+.story-toolbar-container .preview-image img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
